@@ -33,10 +33,14 @@ body {
     margin: 15px;
 }
 
-#navlist > * {
+#navlist li {
     background-color: lightgray;
     padding: 10px;
     border-radius: 10px;
+}
+
+#navlist li * {
+    text-align: center;
 }
 
 a.skip{
