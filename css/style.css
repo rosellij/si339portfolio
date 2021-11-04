@@ -191,6 +191,10 @@ a.skip:focus{
     font-weight: bold;
 }
 
+.flip-card-back p {
+    line-height: 1.1em;
+}
+
 /* END FLIP CARD CODE HERE */
 
 footer form {
