@@ -12,7 +12,7 @@ main {
 }
 
 main p {
-    margin: 30px;
+    margin: 15px;
     line-height: 2;
 }
 
@@ -30,7 +30,7 @@ body {
     max-width: 500px;
     flex-direction: row;
     justify-content: space-between;
-    margin: 30px;
+    margin: 15px;
 }
 
 #navlist > * {
@@ -66,7 +66,7 @@ a.skip:focus{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    margin: 10px;
 }
 
 .parallaximage {
