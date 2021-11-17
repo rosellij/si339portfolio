@@ -171,7 +171,7 @@ a.skip:focus{
 }
 
 .flip-card-back {
-    background-color: #2980b9;
+    background-color: #1d5e8a;
     color: white;
     transform: rotateY(180deg);
 }
@@ -197,6 +197,7 @@ a.skip:focus{
 
 .flip-card-back p {
     line-height: 1.1em;
+    margin: 30px;
 }
 
 /* END FLIP CARD CODE HERE */
@@ -217,7 +218,7 @@ footer:hover {
 
 @media only screen and (min-width: 600px) {
 
-    main p {
+    main > p {
         margin: 30px;
     }
 
