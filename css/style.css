@@ -35,12 +35,19 @@ body {
 
 #navlist li {
     background-color: lightgray;
+    margin: 0px 3px;
     padding: 10px;
     border-radius: 10px;
 }
 
 #navlist li * {
     text-align: center;
+}
+
+#mainheader p {
+    display: none;
+    margin: 5px;
+    color: white;
 }
 
 a.skip{
@@ -234,7 +241,15 @@ footer > p {
     transition: transform 0.25s;
 }
 
+.parallaximage {
+    background-attachment: scroll;
+}
+
 @media only screen and (min-width: 600px) {
+
+    .parallaximage {
+        background-attachment: fixed;
+    }
 
     main > p {
         margin: 30px;
@@ -284,20 +299,9 @@ footer > p {
         grid-column: 3 / -1;
     }
 
-    /*.footerformdiv:focus {
-        height: 20rem;
-    }*/
-
 }
 
 @media only screen and (min-width: 850px) {
-
-    .parallaximage {
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 
     .gridcontainer:not(.page3grid) {
         grid-template-columns: repeat(3, 1fr);
@@ -333,6 +337,29 @@ footer > p {
     
     #blurb2, #blurb4, #blurb6, #blurb8 {
         grid-column: 3;
+    }
+
+}
+
+@media (prefers-reduced-motion) {
+    #mainheader p {
+        display: block;
+    }
+
+    .flip-card-inner {
+        transition: none;
+    } 
+
+    .footerformdiv, .footerformdiv.footerclicked {
+        transition: max-height 0s;
+    }
+
+    .footerformdiv form, .footerformdiv.footerclicked form {
+        transition: transform 0s;
+    }
+
+    .parallaximage {
+        background-attachment: scroll;
     }
 
 }

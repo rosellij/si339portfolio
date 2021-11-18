@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    console.log(document.querySelector("main, header"));
+    // var prefersreducedmotion = window.getComputedStyle(document.querySelector("#mainheader p")).display == 'block' ? true : false;
 
     document.querySelector(".footerformdiv a").addEventListener("click", function() {
         document.querySelector(".footerformdiv").classList.add("footerclicked");
@@ -22,10 +22,11 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    if (document.querySelector("main").classList.contains("page3grid")) {
+    /* if (document.querySelector("main").classList.contains("page3grid")) {
         document.querySelector(".flip-card").addEventListener("click", function() {
+            console.log("did a backflip!");
             document.querySelector(".flip-card").focus();
         });
-    };
+    }; */
 
 });
