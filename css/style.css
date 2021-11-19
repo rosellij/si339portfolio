@@ -249,10 +249,6 @@ footer > p {
 
 @media only screen and (min-width: 600px) {
 
-    .parallaximage {
-        background-attachment: fixed;
-    }
-
     main > p {
         margin: 30px;
     }
@@ -304,6 +300,10 @@ footer > p {
 }
 
 @media only screen and (min-width: 850px) {
+
+    .parallaximage {
+        background-attachment: fixed;
+    }
 
     .gridcontainer:not(.page3grid) {
         grid-template-columns: repeat(3, 1fr);
